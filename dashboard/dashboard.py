@@ -8,14 +8,13 @@ sns.set(style='white')
 st.header('Dashboard Peminjaman Sepeda :sparkles:')
 st.subheader('Pengaruh Cuaca Terhadap Peminjaman Sepeda')
 
-day_df = pd.read_csv("D:/KULIAH/MSIB/Projek Akhir/data/day.csv")
-hour_df = pd.read_csv("D:/KULIAH/MSIB/Projek Akhir/data/hour.csv")
+day_hour_df = pd.read_csv("D:\KULIAH\MSIB\Projek Akhir\proyek-analisis-data\dashboard\data_all.csv")
 
-data_tren_cuaca = day_df.groupby('weathersit').agg({
+data_tren_cuaca = day_hour_df.groupby('weathersit').agg({
     'cnt': 'sum'
 })
 
-data_tren_bulan = day_df.groupby('mnth').agg({
+data_tren_bulan = day_hour_df.groupby('mnth').agg({
     'cnt': 'sum'
 })
 
