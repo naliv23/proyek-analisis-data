@@ -9,7 +9,7 @@ sns.set(style='white')
 st.header('Dashboard Peminjaman Sepeda :sparkles:')
 st.subheader('Pengaruh Cuaca Terhadap Peminjaman Sepeda')
 
-day_hour_df = pd.read_csv("data_all.csv")
+day_hour_df = pd.read_csv("dashboard/data_all.csv")
 
 day_hour_df['dteday'] = pd.to_datetime(day_hour_df['dteday'])
 day_hour_df['year'] = day_hour_df['dteday'].dt.year
