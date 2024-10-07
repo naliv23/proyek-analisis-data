@@ -7,7 +7,6 @@ from babel.numbers import format_currency
 sns.set(style='white')
 
 st.header('Dashboard Peminjaman Sepeda :sparkles:')
-st.subheader('Pengaruh Cuaca Terhadap Peminjaman Sepeda')
 
 day_hour_df = pd.read_csv("dashboard/data_all.csv")
 
